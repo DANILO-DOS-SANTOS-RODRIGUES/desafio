@@ -3,8 +3,8 @@ Instruções para entrega
 
 **O Que deve ser utilizado**
 
-- Variáveis[]
-- Operadores[]
+- Variáveis[x]
+- Operadores[x]
 - Laços de repetição[]
 - Estruturas de decisões[]
 
