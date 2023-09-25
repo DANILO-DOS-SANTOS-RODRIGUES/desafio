@@ -1,12 +1,11 @@
 let nomeHeroi = "Ziriguidum dos hebraicos";
-let nivelHeroi = nivel;
+let nivelHeroi = ""
 let xpInicial = 0;
 let addXp = 0;
 
- let ganhou = 3;
- let perdeu = 7;
+ let ganhou = 7;
+ let perdeu = 3;
 
-let Md10 = ganhou - perdeu;
 
 if(ganhou >= perdeu){
      addXp += 100*ganhou
@@ -17,10 +16,44 @@ if(ganhou >= perdeu){
 let xpTotal= xpInicial + addXp
 
 
-/* vai usar a xpTotal para definir o nivel do heroi, vou pegar o que der no xpTotal colocar 
-em uma estrutura de repetição para verificar provavelmente essa estrutura de repetição vai ser o while 
-que vai ver o tando de xp que o personagem tem e definir o nivel 
-*/
+switch (true){
+    
+    case (xpTotal <= 1000):
+    nivelHeroi = "ferro"
+    break
 
-console.log(addXp)
+    case (xpTotal >= 1001 && xpTotal <= 2000):
+        nivelHeroi = "Bronze"
+        break
+    
+    case (xpTotal >= 2001 && xpTotal <= 5000):
+        nivelHeroi = "Prata"
+        break
+
+     case (xpTotal >= 5001 && xpTotal <= 7000):
+        nivelHeroi = "Ouro"
+        break
+    case (xpTotal >= 7001 && xpTotal <= 8000):
+        nivelHeroi = "Platina"
+        break 
+
+    case (xpTotal >= 8001 && xpTotal <= 9000):
+        nivelHeroi = "Ascendente"
+        break        
+
+    case (xpTotal >= 9001 && xpTotal <= 10000):
+        nivelHeroi = "Imortal"
+        break    
+    
+    case (xpTotal >= 10001):
+        nivelHeroi = "Prata"
+        break    
+    
+
+    default:
+        console.log("Sem nivel")
+
+}
+
+console.log(`O heroi de nome ${nomeHeroi} está no nível ${nivelHeroi}`)
 
