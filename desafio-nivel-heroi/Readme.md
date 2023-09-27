@@ -5,7 +5,7 @@ Instruções para entrega
 
 - Variáveis[x]
 - Operadores[x]
-- Laços de repetição[]
+- Laços de repetição[x]
 - Estruturas de decisões[x]
 
 ## Objetivo

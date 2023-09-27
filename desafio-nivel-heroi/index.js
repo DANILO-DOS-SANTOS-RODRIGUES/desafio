@@ -1,6 +1,6 @@
 let nomeHeroi = "Ziriguidum dos hebraicos";
 let nivelHeroi = ""
-let xpInicial = 0;
+let xpInicial = 500;
 let addXp = 0;
 
  let ganhou = 7;
@@ -46,7 +46,7 @@ switch (true){
         break    
     
     case (xpTotal >= 10001):
-        nivelHeroi = "Prata"
+        nivelHeroi = "Radiante"
         break    
     
 
